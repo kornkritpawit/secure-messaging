@@ -38,7 +38,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public PasswordEncoder encoder() {
-        return new BCryptPasswordEncoder(12);
+        return new BCryptPasswordEncoder(15);
+        //change strength
     }
 
     @Override
